@@ -1,0 +1,57 @@
+@font-face {
+  font-family: "PT Sans";
+  src: url("../../fonts/PT_Sans-Web-Regular.ttf"); }
+
+@font-face {
+  font-family: "PT Sans Italic";
+  src: url("../../fonts/PT_Sans-Web-Italic.ttf"); }
+
+@font-face {
+  font-family: "PT Sans Bold";
+  src: url("../../fonts/PT_Sans-Web-Bold.ttf"); }
+
+body {
+  margin: 0 auto;
+  text-align: center;
+  width: 300px;
+  background-color: #76aacb;
+  font-family: "PT Sans" sans-serif; }
+
+h1 {
+  margin: 10px 0; }
+
+button {
+  vertical-align: top;
+  padding: 0px 50px;
+  margin-bottom: 5px;
+  width: 200px;
+  height: 50px;
+  border: 0px;
+  border-radius: 4px;
+  background-color: #3535af;
+  font-family: "PT Sans Bold";
+  font-size: 16px; }
+
+#home p {
+  margin: 0 0 10px 0; }
+
+#options {
+  display: none; }
+  #options p {
+    margin: 0 0 10px 0; }
+  #options input {
+    margin: 0 0 25px 0;
+    padding: 4px;
+    border: 1px solid #646464;
+    border-radius: 6px;
+    height: 30px; }
+
+#faq {
+  display: none; }
+  #faq p {
+    text-align: left;
+    margin: 0 0 10px 0; }
+  #faq button {
+    margin-top: 10px; }
+
+/*# sourceMappingURL=popup.css.map */

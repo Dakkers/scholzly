@@ -1,0 +1,15 @@
+{
+    "path": {
+        "*.sass": {
+            "sass.enabled": true,
+            "sass.options": {
+                "outputDir": "../",
+                "imagePath": null,
+                "sourceComments": "map",
+                "outputStyle": "nested"
+            },
+            "linting.collapsed": false,
+            "useTabChar": false
+        }
+    }
+}
