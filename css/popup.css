@@ -14,6 +14,7 @@ body {
   margin: 0 auto;
   text-align: center;
   width: 300px;
+  min-height: 400px;
   background-color: white;
   font-family: "PT Sans" sans-serif; }
 
@@ -37,16 +38,22 @@ button {
   background-color: #31b0d5; }
 
 #btn-src {
-  background-color: #43ac6a; }
+  background-color: #43ac6a;
+  margin-bottom: 30px; }
 
 #home p {
-  margin: 0 0 10px 0; }
+  margin: 0 0 10px 0;
+  padding: 0 10px; }
 
 #options {
   display: none; }
   #options p {
     margin: 0 0 10px 0; }
-  #options input {
+  #options input[type="checkbox"] {
+    margin: 0 0 10px 0;
+    width: 25px;
+    height: 25px; }
+  #options input[type="text"] {
     margin: 0 0 25px 0;
     padding: 4px;
     border: 1px solid #646464;
@@ -57,7 +64,8 @@ button {
   display: none; }
   #faq p {
     text-align: left;
-    margin: 0 0 10px 0; }
+    margin: 0 0 10px 0;
+    padding: 0 10px; }
   #faq button {
     margin-top: 10px; }
 
