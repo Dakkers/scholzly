@@ -105,25 +105,25 @@ $(window).load(function() {
     if (runScholzly) {     
 
       editTags = function(tag) {
-        // this function 
+        // this function recurses along the DOM tree, affecting the content of tags that 
+		// are not script/style tags and also do not CONTAIN them.
         var tagName = tag[0].nodeName;
 
         if (tagName === 'SCRIPT' || tagName === 'STYLE')
           return;
 
-        if (tag.find('script').length === 0) {
+        if (tag.find('script').length === 0 && tag.find('style').length === 0) {
           // tag doesn't have any script tags - should be smooth sailing
           tag.html(scholzifyText(tag.html()));
 
         } else {
-          // tag does have script tags - work on that
+          // tag does have script or style tags - recurse on them
           var children = tag.children();
           for (var i=0; i<children.length; i++) {
             editTags($(children[i]));
           }
         }
       }
-
       editTags($('body'));
     }
   });

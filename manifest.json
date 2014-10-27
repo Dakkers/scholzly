@@ -17,8 +17,8 @@
 		"128": "img/So_128x128.png"
 	},
 	"content_scripts": [{
-		"js": ["jquery.min.js", "main.js"],
-		"css": ["background.css"],
+		"js": ["js/jquery.min.js", "js/main.js"],
+		"css": ["css/background.css"],
 		"matches": ["http://*/*", "https://*/*", "file:///*"]
 	}],
 	"permissions": ["storage"]
